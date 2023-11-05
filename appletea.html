@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>appletea</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="data:,">
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    img{
+        max-width: 100%;
+    }
+    #section1{
+        background-image: url("images/nature-3082832__480.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .head{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+  h2{
+      padding-top: 60px;
+  }
+  .center{
+    text-align: center;
+  }
+ .about{
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }  
+ .design{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 90% 10%;
+     padding-bottom: 10px;
+ }
+ .coding{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 75% 25%;
+     padding-bottom: 10px;
+ }
+ .marketing{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 55% 45%;
+ }
+ .b95,.b75,.b55{
+     border: 2px solid rgba(255, 166, 0, 0.541);
+     background-color: orange;
+     font-size: 8px;
+     font-weight: bold;
+   
+     
+ } 
+ .b5,.b25,.b45{
+     border: 2px solid grey;
+     background-color: grey;
+ }
+ 
+.p1{
+    margin-bottom: 0px;
+    text-align: center;
+}
+#section4{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+input[type="text"],input[type="email"]
+{
+background-color: rgba(253, 213, 137, 0.582);
+width: 25%;
+}
+#bn{
+    background-color:   rgba(7, 7, 7, 0.582);
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.input{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#nav{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.head2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+img[src="images/potrait1.jpg"],img[src="images/potrait2.jpg"],img[src="images/p3.jpg"],img[src="images/potrait4.jpg"]
+{
+    border-radius: 50%;
+    width: 200px;
+    border:2px solid yellow;
+    
+}
+#section6{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#section6 .active,.btn:hover{
+
+  color: white;
+}
+.card-img-overlay{
+    display: flex;
+     margin: -16px;
+    align-items: flex-end;
+
+    
+}
+.card-title,.card-text{
+    margin-left: 8px;
+}
+.card-text{
+    padding-bottom: 10px;
+}
+#section7{
+    background-image: url("images/dark.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+#name,#email
+{
+    width:100%;
+}
+
+#textarea{
+    width: 100%;
+    
+    
+}
+.contact{
+    width: 50%;
+    margin: auto;
+}
+textarea{
+    background-color: rgba(253, 213, 137, 0.582);
+    width: 100%;
+}
+.lmenu ul{
+    display: flex;
+     flex-wrap: wrap;
+    margin: auto;
+}
+.lmenu ul{
+    width: 50%;
+}
+.lmenu ul li{
+    margin: auto;
+
+}
+.lmenu ul li a{
+    color: white;
+}
+
+#contact-form{
+    padding-bottom: 40px;
+}
+.overlay{
+    width: 100%;
+}
+label{
+    color: white;
+}
+#response{
+    text-align: center;
+    padding-bottom: 20px;
+    color: yellow;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.menu-button {
+  background-color: #dba634;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.menu-button:hover{
+    background-color: black;
+}
+
+.menu-content {
+  display: none;
+  padding: 20px;
+}
+
+.menu-content.active {
+  display: block;
+}
+
+@media only screen and (max-width:1180px)
+{
+    .card-group{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+ 
+
+
+}
+@media only screen and (max-width:600px)
+{
+.input input[type="text"],.input input[type="email"]
+{
+width:100%;
+margin-bottom: 2px;
+}
+.input p{
+    text-align: center;
+}
+.input{
+    display: block;
+}
+.lmenu ul{
+    width: auto;
+}
+.card-group{
+    display: block;
+}
+
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="container-fluid" id="section1">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="nav" style="background-color: rgba(8, 8, 8, 0.1);">
+            <a class="navbar-brand" href="#">LOGO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"><span class="navbar-toggler-icon">
+       
+                </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbar" >
+       <ul class="navbar-nav">
+       <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+       <li class="nav-item"><a class="nav-link" href="#section3">ABOUT</a></li>
+       <li class="nav-item"><a class="nav-link" href="#section6">PORTFOLIO</a></li>
+       <li class="nav-item"><a class="nav-link" href="#section7">CONTACT</a></li>
+       
+       </ul>
+       </div>
+       
+         </nav>
+
+      
+      <div class="head">
+    <h2 style="color: rgba(247, 240, 240, 0.856);">Nice to Meet You</h2>
+    <p style="color: rgba(247, 240, 240, 0.856);">we dont built websites we built brands....</p>
+    <p style="text-align: center;"><a href="#section7" class="btn btn-warning my-2">
+        Get in Touch
+    </a></p>
+    </div>
+</div>
+</div>
+<div class="container" id="section3">
+    <div class="about">
+        <h4 style="text-align: center;">ABOUT US</h4>
+        <p style="text-align: center;"> Shop products with sustainability certifications, as part of our commitment to help preserve the natural world. Time is fleeting</p>
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <h6>WHAT CAN WE DO</h6>
+        <p>Shop products with sustainability certifications, as part of our commitment to help preserve the natural world. Time is fleeting
+            Shop products with sustainability certifications, as part of our commitment to help preserve the natural world. Time is fleeting
+            Shop products with sustainability certifications, as part of our commitment to help preserve the natural world. Time is fleeting
+            
+        </p>
+    </div>
+    <div class="col-12 col-lg-6">
+        <h6 class="dd">Design</h6>
+        <div class="design">
+        <div class="b95">
+           <p class="p1">95%</p>
+        </div>
+        <div class="b5"></div>
+        
+
+    </div>
+    <h6>Coding</h6>
+<div class="coding">
+    <div class="b75">
+        <p class="p1">75%</p>
+    </div>
+    <div class="b25"></div>
+    </div>
+<h6>Marketing</h6>
+<div class="marketing">
+    <div class="b75">
+        <p class="p1">55%</p>
+    </div>
+    <div class="b25"></div>
+    </div>
+</div>
+    </div>
+</div>
+</div>
+<div class="container-fluid bg-warning" id="section4">
+    <h5 style="text-align: center;">SUBSCRIBE TO OUR NEWS LETTER</h5>
+    <div class="container">
+        <form id="subscribe-form">
+    <div class="input">
+    <input type="text" placeholder="First name" id="fname" class="border-0" style="text-align: center;" required>
+    <input type="text" placeholder="Last name" id="lname" class="border-0" style="text-align: center;"required>
+    <input type="email" placeholder="Email" id="message"  class="border-0" style="text-align: center;"required>
+    
+<p style="margin-bottom: -16px;"><button class="btn" type="submit" id="bn">
+    SUBSCRIBE
+</button>
+</p>
+
+</div>
+<div id="responsesub"></div>
+</form>
+
+</div>
+ </div>
+ <div class="container-fluid bg-dark" id="section5">
+     <div class="container">
+         <div class="head2">
+             <h3 style="color: rgba(255, 255, 255, 0.527);" class="center">OUR TEAM</h3>
+             <p style="color: rgba(255, 255, 255, 0.527);" class="center">We are a team because we respect, trust & care for each other. Our greatest strength is our team spirit & that will remain because a core of us come through the leagues together. </p>
+           <div class="card-group">
+             <div class="card bg-dark">
+                <p class="center"><img src="images/potrait1.jpg" alt="image"></p>
+             <div class="card-body">
+                 <h5 class="card-title text-light center">John Britas</h5>
+                 <p class="card-text text-light center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, officia odio! Doloribus, labore earum explicabo reiciendis eos quis tenetur numquam et! Et, perspiciatis adipisci veniam odit culpa quasi optio reiciendis.</p>
+
+             
+             </div>
+
+             </div>
+        
+             <div class="card bg-dark">
+                <p style="text-align: center;"><img src="images/potrait2.jpg" alt="image"></p>
+             <div class="card-body">
+                 <h5 class="card-title text-light center">Chrisitina</h5>
+                 <p class="card-text text-light center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque molestiae optio aspernatur qui reprehenderit, consequatur quas magni quos soluta minus, totam sapiente consequuntur, officiis debitis velit? Sapiente itaque fugiat soluta?
+                </p>
+            
+             </div>
+             </div>
+             <div class="card bg-dark">
+                <p class="center"><img src="images/p3.jpg" alt="image"></p>
+             <div class="card-body">
+                 <h5 class="card-title text-light center">Hanna Lia</h5>
+                 <p class="card-text text-light center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur non repellendus quisquam ut molestiae tempora et aperiam. Veniam quas dolor sit non? Id, quas totam autem debitis laboriosam quidem!</p>
+                
+
+             </div>
+             </div>
+             <div class="card bg-dark">
+                <p style="text-align: center;"><img src="images/potrait4.jpg" alt="image"></p>
+             <div class="card-body">
+                 <h5 class="card-title text-light center">Ilhan Zubair</h5>
+                 <p class="card-text text-light center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quos veritatis asperiores, blanditiis dolor repellendus rerum quod, earum ipsa nostrum modi. Ex eius vel dolore obcaecati quos atque ad inventore!</p>
+    
+              
+             </div>
+             </div>
+</div>
+             </div>
+      
+      
+            </div>
+     </div>
+ </div>
+ <div class="container-fluid" id="section6">
+    <div class="container">
+        <h3 style="text-align: center;">PORTFOLIO</h3>
+        <p style="text-align: center;">A portfolio is a collection of financial investments like stocks, bonds, commodities, cash, and cash equivalents, including closed-end funds and exchange ...</p>
+        <nav class="menu">
+            <button class="menu-button" data-menu="menu1">ALL</button>
+            <button class="menu-button" data-menu="menu2">DESIGN</button>
+            <button class="menu-button" data-menu="menu3">IDENTITY</button>
+            <button class="menu-button" data-menu="menu4">PHOTOGRAPHY</button>
+            
+          </nav>
+          <div class="menu-content active" id="menu1">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+             <div class="card">
+                 <img src="images/nature-3082832__480.jpg" alt="img">
+                 <div class="card-img-overlay">
+                     <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                     <h4 class="card-title" style="color: white;">title</h4>
+                     <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="col-12 col-lg-4">
+                 <div class="card">
+                    <img src="images/nt2.jpg" alt="img">
+                    <div class="card-img-overlay">
+                        <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                        <h4 class="card-title" style="color: white;">title</h4>
+                        <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+           </div>
+         
+         </div>
+         </div>
+             </div>
+             <div class="col-12 col-lg-4">
+             <div class="card">
+                <img src="images/nt4.jpg" alt="img">
+                <div class="card-img-overlay">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                    <h4 class="card-title" style="color: white;">title</h4>
+                    <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+                   </div>
+         </div>
+         </div></div>
+         <div class="row pt-3">
+            <div class="col-12 col-lg-4 ">
+         <div class="card">
+             <img src="images/nature-3082832__480.jpg" alt="img">
+             <div class="card-img-overlay">
+                 <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                 <h4 class="card-title" style="color: white;">title</h4>
+                 <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+                </div>
+                </div>
+             </div>
+             <div class="col-12 col-lg-4">
+             <div class="card">
+                <img src="images/nt5.jpg" alt="img">
+            <div class="card-img-overlay">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                    <h4 class="card-title" style="color: white;">title</h4>
+                    <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+         
+         </div>
+         </div>
+         </div>
+         <div class="col-12 col-lg-4">
+         <div class="card">
+            <img src="images/nt6.jpg" alt="img">
+            <div class="card-img-overlay">
+                <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                <h4 class="card-title" style="color: white;">title</h4>
+                <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+               </div>
+         </div>
+         
+         </div>
+         </div>
+         <div class="row pt-3">
+            <div class="col-12 col-lg-4">
+         <div class="card">
+             <img src="images/nature-3082832__480.jpg" alt="img">
+             <div class="card-img-overlay">
+                 <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                 <h4 class="card-title" style="color: white;">title</h4>
+                 <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+                </div>
+                </div>
+             </div>
+             <div class="col-12 col-lg-4">
+             <div class="card">
+                <img src="images/nt5.jpg" alt="img">
+            <div class="card-img-overlay">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                    <h4 class="card-title" style="color: white;">title</h4>
+                    <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+         
+         </div>
+         </div>
+         </div>
+         <div class="col-12 col-lg-4">
+         <div class="card">
+            <img src="images/nt6.jpg" alt="img">
+            <div class="card-img-overlay">
+                <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                <h4 class="card-title" style="color: white;">title</h4>
+                <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+               </div>
+         </div>
+         
+         </div>
+                </div>
+          </div>
+          <div class="menu-content" id="menu2">
+         <p class="center" style="color: black;">A design is a concept of either an object, a process, or a system that is specific and, in most cases, detailed. Design refers to something that is or has been intentionally created by a thinking agent, though it is sometimes used to refer to the nature of something. The verb to design expresses the process of developing a design. In some cases, the direct construction of an object without an explicit prior plan may also be considered to be a design (such as in some artwork and craftwork). The design usually has to satisfy certain goals and constraints; may take into account aesthetic, functional, economic, or socio-political considerations; and is expected to interact with a certain environment. Typical examples of designs include architectural and engineering drawings, circuit diagrams, sewing patterns and less tangible artefacts such as business process models.[1]</p>
+         <div class="row pt-3">
+            <div class="col-12 col-lg-4 ">
+         <div class="card">
+             <img src="images/nature-3082832__480.jpg" alt="img">
+             <div class="card-img-overlay">
+                 <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                 <h4 class="card-title" style="color: white;">title</h4>
+                 <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+                </div>
+                </div>
+             </div>
+             <div class="col-12 col-lg-4">
+             <div class="card">
+                <img src="images/nt5.jpg" alt="img">
+            <div class="card-img-overlay">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                    <h4 class="card-title" style="color: white;">title</h4>
+                    <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+         
+         </div>
+         </div>
+         </div>
+         <div class="col-12 col-lg-4">
+         <div class="card">
+            <img src="images/nt6.jpg" alt="img">
+            <div class="card-img-overlay">
+                <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                <h4 class="card-title" style="color: white;">title</h4>
+                <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+               </div>
+         </div>
+         
+         </div>
+         </div>
+        </div>
+          <div class="menu-content" id="menu3">
+            <p class="center" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at hic consequuntur rerum, exercitationem provident laudantium non atque beatae ullam magnam labore nihil ratione delectus ipsum sint accusantium deleniti sunt?</p>
+            <div class="row pt-3">
+                <div class="col-12 col-lg-4">
+             <div class="card">
+                 <img src="images/nature-3082832__480.jpg" alt="img">
+                 <div class="card-img-overlay">
+                     <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                     <h4 class="card-title" style="color: white;">title</h4>
+                     <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+             </div>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="col-12 col-lg-4">
+                 <div class="card">
+                    <img src="images/nt5.jpg" alt="img">
+                <div class="card-img-overlay">
+                        <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                        <h4 class="card-title" style="color: white;">title</h4>
+                        <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+             </div>
+             
+             </div>
+             </div>
+             </div>
+             <div class="col-12 col-lg-4">
+             <div class="card">
+                <img src="images/nt6.jpg" alt="img">
+                <div class="card-img-overlay">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                    <h4 class="card-title" style="color: white;">title</h4>
+                    <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+             </div>
+                   </div>
+             </div>
+             
+             </div>
+                    </div>
+        </div>
+          <div class="menu-content" id="menu4">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+             <div class="card">
+                 <img src="images/nature-3082832__480.jpg" alt="img">
+                 <div class="card-img-overlay">
+                     <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                     <h4 class="card-title" style="color: white;">title</h4>
+                     <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="col-12 col-lg-4">
+                 <div class="card">
+                    <img src="images/nt2.jpg" alt="img">
+                    <div class="card-img-overlay">
+                        <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                        <h4 class="card-title" style="color: white;">title</h4>
+                        <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+           </div>
+         
+         </div>
+         </div>
+             </div>
+             <div class="col-12 col-lg-4">
+             <div class="card">
+                <img src="images/nt4.jpg" alt="img">
+                <div class="card-img-overlay">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                    <h4 class="card-title" style="color: white;">title</h4>
+                    <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+                   </div>
+         </div>
+         </div></div>
+         <div class="row pt-3">
+            <div class="col-12 col-lg-4">
+         <div class="card">
+             <img src="images/nature-3082832__480.jpg" alt="img">
+             <div class="card-img-overlay">
+                 <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                 <h4 class="card-title" style="color: white;">title</h4>
+                 <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+                </div>
+                </div>
+             </div>
+             <div class="col-12 col-lg-4">
+             <div class="card">
+                <img src="images/nt5.jpg" alt="img">
+            <div class="card-img-overlay">
+                    <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                    <h4 class="card-title" style="color: white;">title</h4>
+                    <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+         
+         </div>
+         </div>
+         </div>
+         <div class="col-12 col-lg-4">
+         <div class="card">
+            <img src="images/nt6.jpg" alt="img">
+            <div class="card-img-overlay">
+                <div class="overlay" style="background-color: rgba(0, 0, 0, 0.377);">
+                <h4 class="card-title" style="color: white;">title</h4>
+                <p class="card-text" style="color: white;">Loreum ipsum doior sit amet,consec texture adipiscng ett...</p>
+         </div>
+               </div>
+         </div>
+         
+         </div>
+                </div>
+          </div>
+          </div>
+          
+          <script src="script.js"></script>
+    </div>
+    </div>
+<div class="container-fluid py-5" id="section7">
+    <div class="container-sm">
+    <h5 style="color: wheat; text-align: center;">CONTACT</h5>
+    <form id="contact-form">
+        <div class="contact">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" id="textarea" required></textarea><br>
+
+        <p style="text-align: center;"><button type="submit" class="btn btn-warning">Submit</button></p>
+
+        </div>
+
+    </form>
+
+    <div id="response"></div>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", (event)=> {
+            event.preventDefault(); 
+
+            // Get form input values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            //  response message
+            var responseText = "Thank you, " + name + "! We have received your message.";
+            var responseDiv = document.getElementById("response");
+            responseDiv.textContent = responseText;
+        });
+        document.getElementById("subscribe-form").addEventListener("submit", (event)=> {
+            event.preventDefault(); 
+
+            // Get form input values
+            var name = document.getElementById("fname").value;
+            var email = document.getElementById("lname").value;
+            var message = document.getElementById("message").value;
+
+            //  response message
+            document.getElementById("bn").textContent="SUBSCRIBED"
+
+        });
+    </script>
+
+    <footer>
+    <div class="lmenu">
+      <ul style="list-style: none;">
+        <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section3">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section6">PORTFOLIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section7">CONTACT</a></li>
+        
+        </ul>
+        
+        </div>
+    </div>
+    <p style="color: white;text-align: center;">Copyright 	&copy; LogoDesign2020 All Rights Reserved</p>
+</div>
+
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</form>
+
+
+</body>
+</html>
